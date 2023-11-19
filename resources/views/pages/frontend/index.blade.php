@@ -7,17 +7,17 @@
               class="w-full absolute z-20 inset-0 md:relative md:w-1/2 text-center flex flex-col justify-center hero-caption"
             >
               <h1 class="text-3xl md:text-5xl leading-tight font-semibold">
-                The Room <br class="" />You've Dreaming
+                Mari Nikmati <br class="" />Secangkir Teh
               </h1>
               <h2 class="px-8 text-base md:px-0 md:text-lg my-6 tracking-wide">
-                Kami menyediakan furniture berkelas yang
-                <br class="hidden lg:block" />membuat ruangan terasa homey
+                Dengan Kedai Es Teh Remaja
+                <br class="hidden lg:block" />Anda Dapat Menikmati Berbagai Macam Teh
               </h2>
               <div>
                 <a
-                  href="#browse-the-room"
+                  href="#menu"
                   class="bg-pink-400 text-black hover:bg-black hover:text-pink-400 rounded-full px-8 py-3 mt-4 inline-block flex-none transition duration-200"
-                  >Explore Now</a
+                  >Menu</a
                 >
               </div>
             </div>
@@ -25,38 +25,23 @@
               <div class="relative hero-image">
                 <div class="overlay inset-0 bg-black opacity-35 z-10"></div>
                 <div class="overlay right-0 bottom-0 md:inset-0">
-                  <button
-                    class="video hero-cta focus:outline-none z-30 modal-trigger"
-                    data-content='<div class="w-screen pb-56 md:w-88 md:pb-56 relative z-50">
-                    <div class="absolute w-full h-full">
-                      <iframe
-                        width="100%"
-                        height="100%"
-                        src="https://www.youtube.com/embed/3h0_v1cdUIA"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                      ></iframe>
-                    </div>
-                  </div>'
-                  ></button>
                 </div>
                 <img
-                  src="/frontend/images/content/image-section-1.png"
+                  src="/frontend/images/content/hero-bg-tea.jpg"
                   alt="hero 1"
-                  class="absolute inset-0 md:relative w-full h-full object-cover object-center"
+                  class="absolute inset-0 md:relative w-full h-full object-cover object-center rounded-sm"
                 />
               </div>
             </div>
           </section>
           <!-- END: HERO -->
       
-          <!-- START: BROWSE THE ROOM -->
+          <!-- START: MENU -->
           <section class="flex bg-gray-100 py-16 px-4" id="browse-the-room">
             <div class="container mx-auto">
               <div class="flex flex-start mb-4">
                 <h3 class="text-2xl capitalize font-semibold">
-                  browse the room <br class="" />that we designed for you
+                  About Es Teh Remaja 
                 </h3>
               </div>
               <div class="grid grid-rows-2 grid-cols-9 gap-4">
@@ -66,19 +51,13 @@
                 >
                   <div class="card-shadow rounded-xl">
                     <img
-                      src=".//frontend/images/content/image-catalog-1.png"
+                      src="/frontend/images/content/es-teh-remaja1.jpg"
                       alt=""
                       class="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl"
                     />
                   </div>
-                  <div
-                    class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-48 md:pl-72"
-                  >
-                    <h5 class="text-lg font-semibold">Living Room</h5>
-                    <span class="">18.309 items</span>
-                  </div>
                   <a href="details.html" class="stretched-link">
-                    <!-- fake children -->
+                    <!-- STRAWBERRY -->
                   </a>
                 </div>
                 <div
@@ -86,19 +65,27 @@
                 >
                   <div class="card-shadow rounded-xl">
                     <img
-                      src="/frontend/images/content/image-catalog-3.png"
+                      src="/frontend/images/content/strawberry.jpg"
                       alt=""
                       class="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl"
                     />
                   </div>
-                  <div
-                    class="overlay right-0 left-0 top-0 bottom-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-12"
-                  >
-                    <h5 class="text-lg font-semibold">Decoration</h5>
-                    <span class="">77.392 items</span>
+                  <a href="details.html" class="stretched-link">
+                    <!-- STRAWBERRY -->
+                  </a>
+                </div>
+                <div
+                  class="relative col-span-9 row-span-1 md:col-span-2 md:row-span-2 card"
+                >
+                  <div class="card-shadow rounded-xl">
+                    <img
+                      src="/frontend/images/content/mix.jpg"
+                      alt=""
+                      class="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl"
+                    />
                   </div>
                   <a href="details.html" class="stretched-link">
-                    <!-- fake children -->
+                    <!-- STRAWBERRY -->
                   </a>
                 </div>
                 <div
@@ -106,50 +93,27 @@
                 >
                   <div class="card-shadow rounded-xl">
                     <img
-                      src="/frontend/images/content/image-catalog-4.png"
+                      src="/frontend/images/content/mango.jpg"
                       alt=""
                       class="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl"
                     />
                   </div>
-                  <div
-                    class="overlay right-0 left-0 top-0 bottom-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-12"
-                  >
-                    <h5 class="text-lg font-semibold">Living Room</h5>
-                    <span class="">22.094 items</span>
-                  </div>
                   <a href="details.html" class="stretched-link">
-                    <!-- fake children -->
+                    <!-- MANGO -->
                   </a>
                 </div>
-                <div class="relative col-span-9 row-span-1 md:col-span-4 card">
-                  <div class="card-shadow rounded-xl">
-                    <img
-                      src="/frontend/images/content/image-catalog-2.png"
-                      alt=""
-                      class="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl"
-                    />
-                  </div>
-                  <div
-                    class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-48 md:pl-72"
-                  >
-                    <h5 class="text-lg font-semibold">Children Room</h5>
-                    <span class="">837 items</span>
-                  </div>
-                  <a href="details.html" class="stretched-link">
-                    <!-- fake children -->
-                  </a>
-                </div>
+
               </div>
             </div>
           </section>
           <!-- END: BROWSE THE ROOM -->
       
           <!-- START: JUST ARRIVED -->
-          <section class="flex flex-col py-16">
+          <section class="flex flex-col py-16" id="menu">
             <div class="container mx-auto mb-4">
               <div class="flex justify-center text-center mb-4">
                 <h3 class="text-2xl capitalize font-semibold">
-                  Just Arrived <br class="" />this summer for you
+                  Menu Tea
                 </h3>
               </div>
             </div>
@@ -208,34 +172,4 @@
           </section>
           <!-- END: JUST ARRIVED -->
       
-          <!-- START: CLIENTS -->
-          <section class="container mx-auto">
-            <div class="flex justify-center flex-wrap">
-              <div
-                class="w-full flex-auto md:w-auto md:flex-initial px-4 md:px-6 my-4 md:my-0"
-              >
-                <img src="/frontend/images/content/logo-adobe.svg" alt="" class="mx-auto" />
-              </div>
-              <div
-                class="w-full flex-auto md:w-auto md:flex-initial px-4 md:px-6 my-4 md:my-0"
-              >
-                <img src="/frontend/images/content/logo-ikea.svg" alt="" class="mx-auto" />
-              </div>
-              <div
-                class="w-full flex-auto md:w-auto md:flex-initial px-4 md:px-6 my-4 md:my-0"
-              >
-                <img
-                  src="/frontend/images/content/logo-hermanmiller.svg"
-                  alt=""
-                  class="mx-auto"
-                />
-              </div>
-              <div
-                class="w-full flex-auto md:w-auto md:flex-initial px-4 md:px-6 my-4 md:my-0"
-              >
-                <img src="/frontend/images/content/logo-miele.svg" alt="" class="mx-auto" />
-              </div>
-            </div>
-          </section>
-          <!-- END: CLIENTS -->
 @endsection

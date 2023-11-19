@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8" />
-    <title>LuxSpace</title>
+    <title>Es Teh Remaja</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -15,7 +15,6 @@
     <link rel="apple-touch-icon" href="{{ url('/frontend/images/content/favicon.png') }}" />
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="icon" href="{{ url('frontend/images/content/favicon.png') }}" />
 
     <meta name="theme-color" content="#000" />
   <link rel="icon" href="f{{ url('frontend/favicon.ico') }}">

@@ -62,7 +62,7 @@
               <div class="px-4 flex-none">
                 <div class="" style="width: 90px; height: 90px">
                   <img
-                    src="{{ $item->product->galleries()->exists() ? Storage::url($product->galleries->first()->url) : 'data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' }}"
+                    src="{{ $item->product->galleries()->exists() ? Storage::url($item->product->galleries->first()->url) : 'data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' }}"
                     alt="chair-1"
                     class="object-cover rounded-xl w-full h-full"
                   />
@@ -96,7 +96,7 @@
                     <button
                     class="text-red-600 border-none focus:outline-none px-3 py-1"
                   >
-                    X
+                     Hapus
                   </button>
                   </form>
                 </div>

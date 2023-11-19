@@ -3,15 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Product;
 
 class FrontendController extends Controller
 {
     public function index(Request $request) {
-        return view('pages.frontend.index');
+        $products = Product::with(['galleries'])->latest()->get();
+
+        return view('pages.frontend.index', compact('products'));
     }
 
     public function details(Request $request, $slug) {
-        return view('pages.frontend.details');
+        $product = Product::with(['galleries'])->where('slug', $slug)->firstOrFail();
+        $recomendations = Product::with(['galleries'])->inRandomOrder()->limit(4)->get();
+
+        return view('pages.frontend.details', compact('product', 'recomendations'));
     }
 
     public function cart(Request $request) {

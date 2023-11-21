@@ -60,20 +60,7 @@
                     <!-- STRAWBERRY -->
                   </a>
                 </div>
-                <div
-                  class="relative col-span-9 row-span-1 md:col-span-2 md:row-span-2 card"
-                >
-                  <div class="card-shadow rounded-xl">
-                    <img
-                      src="/frontend/images/content/strawberry.jpg"
-                      alt=""
-                      class="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl"
-                    />
-                  </div>
-                  <a href="details.html" class="stretched-link">
-                    <!-- STRAWBERRY -->
-                  </a>
-                </div>
+
                 <div
                   class="relative col-span-9 row-span-1 md:col-span-2 md:row-span-2 card"
                 >
@@ -160,7 +147,6 @@
                   <h5 class="text-lg font-semibold mt-4">{{ $product->name }}</h5>
                   <span class="">IDR {{ number_format($product->price) }}</span>
                   <a href="{{ route('details', $product->slug) }}" class="stretched-link">
-                    <!-- fake children -->
                   </a>
                 </div>
                 @endforeach

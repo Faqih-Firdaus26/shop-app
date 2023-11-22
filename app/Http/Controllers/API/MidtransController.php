@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use Midtrans\Config;
-use Midtrans\Transaction;
+use App\Models\Transaction;
 use Midtrans\Notification;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;

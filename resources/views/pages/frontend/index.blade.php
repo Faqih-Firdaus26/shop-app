@@ -36,64 +36,95 @@
           </section>
           <!-- END: HERO -->
       
-          <!-- START: MENU -->
-          <section class="flex bg-gray-100 py-16 px-4" id="browse-the-room">
-            <div class="container mx-auto">
-              <div class="flex flex-start mb-4">
-                <h3 class="text-2xl capitalize font-semibold">
-                  About Es Teh Remaja 
-                </h3>
+           <!-- START: BROWSE THE ROOM -->
+        <section class="flex bg-gray-100 py-16 px-4" id="browse-the-room">
+          <div class="container mx-auto">
+              <div class="flex flex-start mb-3">
+                  <h3 class="text-2xl capitalize font-semibold text-center mx-auto mb-4">
+                      About Esteh Remaja
+                  </h3>
+              </div>
+              <div class="flex flex-start mb-3">
+                <p class="text-center font-bold mb-4">Esteh Remaja adalah penyedia minuman segar dengan nuansa remaja yang bersemangat. Kami menyajikan beragam varian rasa yang memikat, mulai dari rasa cokelat yang menggoda, kelezatan green tea yang menenangkan, cita rasa leci yang menyegarkan, hingga keistimewaan mangga yang eksotis. Tak lupa, kami juga menghadirkan kesempurnaan red velvet yang elegan dan kesegaran manis strawberry yang menggugah. Kami percaya setiap tegukan dari minuman kami adalah pengalaman cita rasa yang membawa kegembiraan dan kenikmatan bagi para pelanggan kami.</p>
               </div>
               <div class="grid grid-rows-2 grid-cols-9 gap-4">
-                <div
-                  class="relative col-span-9 row-span-1 md:col-span-4 card"
-                  style="height: 180px"
-                >
-                  <div class="card-shadow rounded-xl">
-                    <img
-                      src="/frontend/images/content/es-teh-remaja1.jpg"
-                      alt=""
-                      class="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl"
-                    />
+                  <div
+                      class="relative col-span-9 row-span-1 md:col-span-4 card"
+                      style="height: 180px"
+                  >
+                      <div class="card-shadow rounded-xl">
+                          <img
+                              src="frontend/images/content/es-teh-remaja1.jpg"
+                              alt=""
+                              class="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl"
+                          />
+                      </div>
+                      <div
+                          class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-48 md:pl-72"
+                      >
+                      </div>
+                      <a href="details.html" class="stretched-link">
+                          <!-- fake children -->
+                      </a>
                   </div>
-                  <a href="details.html" class="stretched-link">
-                    <!-- STRAWBERRY -->
-                  </a>
-                </div>
-
-                <div
-                  class="relative col-span-9 row-span-1 md:col-span-2 md:row-span-2 card"
-                >
-                  <div class="card-shadow rounded-xl">
-                    <img
-                      src="/frontend/images/content/mix.jpg"
-                      alt=""
-                      class="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl"
-                    />
+                  <div
+                      class="relative col-span-9 row-span-1 md:col-span-2 md:row-span-2 card"
+                  >
+                      <div class="card-shadow rounded-xl">
+                          <img
+                              src="frontend/images/content/strawberry.jpg"
+                              alt=""
+                              class="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl"
+                          />
+                      </div>
+                      <div
+                          class="overlay right-0 left-0 top-0 bottom-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-12"
+                      >
+                      </div>
+                      <a href="details.html" class="stretched-link">
+                          <!-- fake children -->
+                      </a>
                   </div>
-                  <a href="details.html" class="stretched-link">
-                    <!-- STRAWBERRY -->
-                  </a>
-                </div>
-                <div
-                  class="relative col-span-9 row-span-1 md:col-span-3 md:row-span-2 card"
-                >
-                  <div class="card-shadow rounded-xl">
-                    <img
-                      src="/frontend/images/content/mango.jpg"
-                      alt=""
-                      class="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl"
-                    />
+                  <div
+                      class="relative col-span-9 row-span-1 md:col-span-3 md:row-span-2 card"
+                  >
+                      <div class="card-shadow rounded-xl">
+                          <img
+                              src="frontend/images/content/mix.jpg"
+                              alt=""
+                              class="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl"
+                          />
+                      </div>
+                      <div
+                          class="overlay right-0 left-0 top-0 bottom-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-12"
+                      >
+                      </div>
+                      <a href="details.html" class="stretched-link">
+                          <!-- fake children -->
+                      </a>
                   </div>
-                  <a href="details.html" class="stretched-link">
-                    <!-- MANGO -->
-                  </a>
-                </div>
-
+                  <div
+                      class="relative col-span-9 row-span-1 md:col-span-4 card"
+                  >
+                      <div class="card-shadow rounded-xl">
+                          <img
+                              src="frontend/images/content/mix2.jpg"
+                              alt=""
+                              class="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl"
+                          />
+                      </div>
+                      <div
+                          class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-48 md:pl-72"
+                      >
+                      </div>
+                      <a href="details.html" class="stretched-link">
+                          <!-- fake children -->
+                      </a>
+                  </div>
               </div>
-            </div>
-          </section>
-          <!-- END: BROWSE THE ROOM -->
+          </div>
+      </section>
+      <!-- END: BROWSE THE ROOM -->
       
           <!-- START: JUST ARRIVED -->
           <section class="flex flex-col py-16" id="menu">

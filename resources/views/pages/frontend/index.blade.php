@@ -38,7 +38,7 @@
       
            <!-- START: ABOUT -->
            <section class="flex bg-gray-100 py-16 px-4" id="browse-the-room">
-            <div class="container mx-auto">
+            <div class="container mx-auto" id="tentang">
                 <div class="flex flex-start mb-3">
                     <h3 class="text-2xl capitalize font-semibold text-center mx-auto mb-4">
                         Tentang Esteh Remaja
@@ -124,10 +124,10 @@
       
           <!-- START: JUST ARRIVED -->
           <section class="flex flex-col py-16" id="menu">
-            <div class="container mx-auto mb-4">
+            <div class="container mx-auto mb-4" id="menu_index">
               <div class="flex justify-center text-center mb-4">
                 <h3 class="text-2xl capitalize font-semibold">
-                  Menu Tea
+                  Menu Teh
                 </h3>
               </div>
             </div>

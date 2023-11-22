@@ -1,6 +1,6 @@
     <!-- START: ASIDE MENU -->
     <section class="">
-        <div class="border-t border-b border-gray-200 py-12 mt-16 px-4">
+        <div class="border-t border-b border-gray-200 py-12 mt-16 px-4" id="kontak">
           <div class="flex justify-center mb-8">
             <img
               src="{{ url('/frontend/images/content/logo-dashboard.png') }}"

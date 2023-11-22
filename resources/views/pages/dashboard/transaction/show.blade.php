@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-           Transaction &raque; #{{ $transaction->id }} {{ $transaction->name }}
+           Transaction &raquo; #{{ $transaction->id }} {{ $transaction->name }}
         </h2>
     </x-slot>
 

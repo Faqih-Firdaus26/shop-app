@@ -45,7 +45,7 @@
                             <select name="roles" class="block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 ">
                                 <option value="{{ $item->roles }}">{{ $item->roles }}</option>
                                 <option disabled>------------</option>
-                                <option value="ADMIN">Administrator</option>
+                                <option value="ADMIN">ADMIN</option>
                                 <option value="USER">USER</option>
                             </select>
                         </div>

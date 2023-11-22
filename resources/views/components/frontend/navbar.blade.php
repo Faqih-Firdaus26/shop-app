@@ -19,12 +19,12 @@
               >
                 <li class="mx-3 py-6 md:py-0">
                   <a href="#" class="text-black {{ \Route::current()->getName() == 'index' ? 'md:text-white' : 'md:text-black' }} hover:underline"
-                    >Home</a
+                    >Beranda</a
                   >
                 </li>
-                <li class="mx-3 py-6 md:py-0">
+                <li class="mx-3 py-6 md:py-0 ">
                   <a href="#" class="text-black {{ \Route::current()->getName() == 'index' ? 'md:text-white' : 'md:text-black' }} hover:underline"
-                    >About</a
+                    >Tentang</a
                   >
                 </li>
                 <li class="mx-3 py-6 md:py-0">
@@ -34,7 +34,7 @@
                 </li>
                 <li class="mx-3 py-6 md:py-0">
                   <a href="#" class="text-black {{ \Route::current()->getName() == 'index' ? 'md:text-white' : 'md:text-black' }} hover:underline"
-                    >Contact</a
+                    >Kontak</a
                   >
                 </li>
                 @auth
@@ -48,11 +48,6 @@
                 <li class="mx-3 py-6 md:py-0">
                   <a href="{{ route('login') }}" class="text-black {{ \Route::current()->getName() == 'index' ? 'md:text-white' : 'md:text-black' }} hover:underline"
                     >Login</a
-                  >
-                </li>
-                <li class="mx-3 py-6 md:py-0">
-                  <a href="{{ route('register') }}" class="text-black {{ \Route::current()->getName() == 'index' ? 'md:text-white' : 'md:text-black' }} hover:underline"
-                    >Registrasi</a
                   >
                 </li>
                 @endguest

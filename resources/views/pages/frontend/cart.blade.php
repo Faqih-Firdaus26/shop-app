@@ -85,7 +85,7 @@
                 class="px-4 w-auto flex-none md:flex-1 md:w-5/12 hidden md:block"
               >
                 <div class="">
-                  <h6 class="font-semibold text-lg">IDR {{ number_format($item->product->price) }}</h6>
+                  <h6 class="font-semibold text-lg">Rp {{ number_format($item->product->price) }}</h6>
                 </div>
               </div>
               <div class="px-4 w-2/12">
@@ -116,12 +116,12 @@
                 <form action="{{ route('checkout') }}" method="POST">
                   @csrf
                   <div class="flex flex-start mb-6">
-                    <h3 class="text-2xl">Shipping Details</h3>
+                    <h3 class="text-2xl">Detail Rincian</h3>
                   </div>
   
                   <div class="flex flex-col mb-4">
                     <label for="complete-name" class="text-sm mb-2"
-                      >Complete Name</label
+                      >Nama Lengkap</label
                     >
                     <input
                       data-input
@@ -129,37 +129,37 @@
                       name="name"
                       id="complete-name"
                       class="border-gray-200 border rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none"
-                      placeholder="Input your name"
+                      placeholder="Masukkan Nama Lengkap Anda"
                     />
                   </div>
   
                   <div class="flex flex-col mb-4">
-                    <label for="email" class="text-sm mb-2">Email Address</label>
+                    <label for="email" class="text-sm mb-2">Email</label>
                     <input
                       data-input
                       type="email"
                       name="email"
                       id="email"
                       class="border-gray-200 border rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none"
-                      placeholder="Input your email address"
+                      placeholder="Masukkan Alamat Email Anda"
                     />
                   </div>
   
                   <div class="flex flex-col mb-4">
-                    <label for="address" class="text-sm mb-2">Address</label>
+                    <label for="address" class="text-sm mb-2">Alamat Lengkap</label>
                     <input
                       data-input
                       type="text"
                       name="address"
                       id="address"
                       class="border-gray-200 border rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none"
-                      placeholder="Input your address"
+                      placeholder="Masukkan Alamat Lengkap Anda"
                     />
                   </div>
   
                   <div class="flex flex-col mb-4">
                     <label for="phone-number" class="text-sm mb-2"
-                      >Phone Number</label
+                      >Nomor HP</label
                     >
                     <input
                       data-input
@@ -167,13 +167,13 @@
                       name="phone"
                       id="phone-number"
                       class="border-gray-200 border rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none"
-                      placeholder="Input your phone number"
+                      placeholder="Masukkan Nomor Telepon Anda"
                     />
                   </div>
   
                   <div class="flex flex-col mb-4">
                     <label for="complete-name" class="text-sm mb-2"
-                      >Choose Courier</label
+                      >Kurir</label
                     >
                     <div class="flex -mx-2 flex-wrap">
                       <div class="px-2 w-6/12 h-24 mb-4">
@@ -209,7 +209,7 @@
   
                   <div class="flex flex-col mb-4">
                     <label for="complete-name" class="text-sm mb-2"
-                      >Choose Payment</label
+                      >Metode Pembayaran</label
                     >
                     <div class="flex -mx-2 flex-wrap">
                       <div class="px-2 w-6/12 h-24 mb-4">
@@ -234,7 +234,7 @@
                       disabled
                       class="bg-pink-400 text-black hover:bg-black hover:text-pink-400 focus:outline-none w-full py-3 rounded-full text-lg focus:text-black transition-all duration-200 px-6"
                     >
-                      Checkout Now
+                      Checkout 
                     </button>
                   </div>
                 </form>

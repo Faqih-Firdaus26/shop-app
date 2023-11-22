@@ -15,6 +15,8 @@
     <link rel="apple-touch-icon" href="{{ url('/frontend/images/content/favicon.png') }}" />
     <!-- Place favicon.ico in the root directory -->
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <meta name="theme-color" content="#000" />
   <link rel="icon" href="f{{ url('frontend/favicon.ico') }}">

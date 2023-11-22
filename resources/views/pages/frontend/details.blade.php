@@ -21,7 +21,7 @@
         <div class="flex flex-wrap my-4 md:my-12">
           <div class="w-full md:hidden px-4">
             <h2 class="text-5xl font-semibold">{{ $product->name }}</h2>
-            <span class="text-xl">IDR {{ number_format($product->price) }}</span>
+            <span class="text-xl">Rp {{ number_format($product->price) }}</span>
           </div>
           <div class="flex-1">
             <div class="slider">
@@ -55,7 +55,7 @@
           </div>
           <div class="flex-1 px-4 md:p-6">
             <h2 class="text-5xl font-semibold">{{ $product->name }}</h2>
-            <p class="text-xl">IDR {{ number_format($product->price) }}</p>
+            <p class="text-xl">Rp {{ number_format($product->price) }}</p>
   
             <form action="{{ route('cart-add', $product->id) }}" method="POST">
               @csrf
@@ -120,7 +120,7 @@
                   />
                 </div>
                 <h5 class="text-lg font-semibold mt-4">{{ $recomendation->name }}</h5>
-                <span class="">IDR {{ number_format($recomendation->price) }}</span>
+                <span class="">Rp {{ number_format($recomendation->price) }}</span>
                 <a href="{{ route('details', $recomendation->slug) }}" class="stretched-link">
                   <!-- fake children -->
                 </a>

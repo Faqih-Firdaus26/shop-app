@@ -40,6 +40,13 @@
                 @endif
 
                 <x-button class="ms-4">
+                    <a href="{{ route('register') }}"  {{ \Route::current()->getName() == 'index' ? 'md:text-white' : 'md:text-black' }} hover:underline"
+                        > Registrasi</a
+                      >
+                </x-button>
+
+
+                <x-button class="ms-4">
                     {{ __('Log in') }}
                 </x-button>
             </div>

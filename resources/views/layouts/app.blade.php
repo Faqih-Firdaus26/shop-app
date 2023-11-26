@@ -109,5 +109,7 @@
         @livewireScripts
         <!--- Tambahkan setelah livewireScripts --->
         {{ $script ?? '' }}
+
+        @include('sweetalert::alert')
     </body>
 </html>

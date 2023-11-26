@@ -75,7 +75,7 @@ class ProductController extends Controller
         $data['slug'] = Str::slug($request->name);
 
         Product::create($data);
-
+        Alert::success('Sukses', 'Produk berhasil ditambahkan');
        return redirect()->route('dashboard.product.index');
     }
 
@@ -106,7 +106,7 @@ class ProductController extends Controller
         $data['slug'] = Str::slug($request->name);
 
         $product->update($data);
-
+        Alert::success('Sukses', 'Produk berhasil diperbarui');
        return redirect()->route('dashboard.product.index');
     }
 
@@ -116,6 +116,8 @@ class ProductController extends Controller
     public function destroy(Product $product)
     {
         $product->delete();
+
+        Alert::success('Sukses', 'Produk berhasil dihapus');
         return redirect()->route('dashboard.product.index');
     }
 }

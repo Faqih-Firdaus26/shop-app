@@ -37,8 +37,6 @@
                                 <option value="SUCCESS">SUCCESS</option>
                                 <option value="CANCELLED">CANCELLED</option>
                                 <option value="FAILED">FAILED</option>
-                                <option value="SHIPPING">SHIPPING</option>
-                                <option value="SHIPPED">SHIPPED</option>
                             </select>
                         </div>
                     </div>

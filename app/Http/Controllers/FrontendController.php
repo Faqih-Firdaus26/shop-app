@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use App\Models\TransactionItem;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\CheckoutRequest;
+use RealRashid\SweetAlert\Facades\Alert;
 use Midtrans\Config;
 use midtrans\Snap;
 
@@ -40,6 +41,7 @@ class FrontendController extends Controller
     public function cartDelete(Request $request, $id){
         $item = Cart::findorfail($id);
         $item ->delete();
+        Alert::success('Sukses', 'Produk Berhasil Dihapus');
         return redirect('cart');
     }
 

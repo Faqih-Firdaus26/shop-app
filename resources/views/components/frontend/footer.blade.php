@@ -81,30 +81,15 @@
                 <h5 class="text-lg font-semibold mb-2 relative">Kontak</h5>
                 <ul class="h-0 invisible md:h-auto md:visible overflow-hidden">
                   <li>
-<<<<<<< Updated upstream
-                    <a href="#" class="hover:underline py-1 block"
-                      >esteh.remaja2@gmail.com</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="hover:underline py-1 block"
-                      >089507322971</a
-                    >
-=======
                     <a href="#" class="hover:underline py-1 block">Terms & Conds</a>
                   </li>
                   <li>
                     <a href="#" class="hover:underline py-1 block">Privacy Policy</a>
->>>>>>> Stashed changes
                   </li>
                 </ul>
               </div>
 
               <div class="px-4 w-full md:w-3/12 mb-4 md:mb-0">
-<<<<<<< Updated upstream
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d685.672013870182!2d107.12297562248915!3d-6.38378846229024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69996adfe9a461%3A0x6639a59f6380d0b0!2sHery!5e0!3m2!1sid!2sid!4v1700899961547!5m2!1sid!2sid" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-=======
                 <h5 class="text-lg font-semibold mb-2 relative">Special Letter</h5>
                 <form action="#">
                   <label class="relative w-full">
@@ -117,7 +102,6 @@
                     </button>
                   </label>
                 </form>
->>>>>>> Stashed changes
               </div>
             </div>
           </aside>

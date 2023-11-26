@@ -2,11 +2,11 @@
 
 @section('content')
     <!-- START: BREADCRUMB -->
-    <section class="bg-gray-100 py-8 px-4">
+    <section class="bg-green-100 py-8 px-4">
         <div class="container mx-auto">
           <ul class="breadcrumb">
             <li>
-              <a href="index.html">Home</a>
+              <a href="{{ route('index') }}">Home</a>
             </li>
             <li>
               <a href="#" aria-label="current-page">Shopping Cart</a>
@@ -42,11 +42,6 @@
                   <div class="px-4 w-5/12">
                     <div class="">
                       <h6>Harga</h6>
-                    </div>
-                  </div>
-                  <div class="px-4 w-5/12">
-                    <div class="">
-                      <h6>Kuantitas</h6>
                     </div>
                   </div>
 
@@ -102,7 +97,10 @@
                     <button
                     class="text-red-600 border-none focus:outline-none px-3 py-1"
                   >
-                     Hapus
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                      <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                      <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                    </svg>
                   </button>
                   </form>
                 </div>
@@ -118,7 +116,7 @@
              
             </div>
             <div class="w-full md:px-4 md:w-4/12" id="shipping-detail">
-              <div class="bg-gray-100 px-4 py-6 md:p-8 md:rounded-3xl">
+              <div class="bg-yellow-200 px-4 py-6 md:p-8 md:rounded-3xl">
                 <form action="{{ route('checkout') }}" method="POST">
                   @csrf
                   <div class="flex flex-start mb-6">
@@ -238,7 +236,7 @@
                     <button
                       type="submit"
                       disabled
-                      class="bg-pink-400 text-black hover:bg-black hover:text-pink-400 focus:outline-none w-full py-3 rounded-full text-lg focus:text-black transition-all duration-200 px-6"
+                      class="bg-green-400 text-black hover:bg-black hover:text-green-400 focus:outline-none w-full py-3 rounded-full text-lg focus:text-black transition-all duration-200 px-6"
                     >
                       Checkout 
                     </button>

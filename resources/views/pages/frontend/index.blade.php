@@ -2,125 +2,63 @@
 
 @section('content')
         <!-- START: HERO -->
-        <section class="flex items-center hero">
-            <div
-              class="w-full absolute z-20 inset-0 md:relative md:w-1/2 text-center flex flex-col justify-center hero-caption"
+      <section id="home"
+      class="relative bg-[url(/frontend/images/content/hero-bg-tea.jpg)] bg-cover bg-center bg-no-repeat"
+      >
+      <div
+        class="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
+      ></div>
+
+      <div
+        class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
+      >
+        <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+          <h1 class="text-3xl font-extrabold sm:text-5xl text-white">
+            Mari Menikmati 
+
+            <strong class="block font-extrabold text-green-600">
+              Segelas Teh.
+            </strong>
+          </h1>
+
+          <p class="mt-4 max-w-lg sm:text-xl/relaxed text-white">
+            Dengan Kedai Es Teh Remaja, Anda dapat menikmati berbagai macam teh
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-4 text-center">
+            <a
+              href="#menu_index"
+              class="block w-full rounded-full bg-green-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-green-700 focus:outline-none focus:ring active:bg-green-500 sm:w-auto mx-auto"
             >
-              <h1 class="text-3xl md:text-5xl leading-tight font-semibold">
-                Mari Nikmati <br class="" />Secangkir Teh
-              </h1>
-              <h2 class="px-8 text-base md:px-0 md:text-lg my-6 tracking-wide">
-                Dengan Kedai Es Teh Remaja
-                <br class="hidden lg:block" />Anda Dapat Menikmati Berbagai Macam Teh
-              </h2>
-              <div>
-                <a
-                  href="#menu"
-                  class="bg-pink-400 text-black hover:bg-black hover:text-pink-400 rounded-full px-8 py-3 mt-4 inline-block flex-none transition duration-200"
-                  >Menu</a
-                >
-              </div>
-            </div>
-            <div class="w-full inset-0 md:relative md:w-1/2">
-              <div class="relative hero-image">
-                <div class="overlay inset-0 bg-black opacity-35 z-10"></div>
-                <div class="overlay right-0 bottom-0 md:inset-0">
-                </div>
-                <img
-                  src="/frontend/images/content/hero-bg-tea.jpg"
-                  alt="hero 1"
-                  class="absolute inset-0 md:relative w-full h-full object-cover object-center rounded-sm"
-                />
-              </div>
-            </div>
-          </section>
+              Beli Sekarang
+            </a>
+          </div>
+        </div>
+      </div>
+      </section>
           <!-- END: HERO -->
-      
-           <!-- START: ABOUT -->
-           <section class="flex bg-gray-100 py-16 px-4" id="browse-the-room">
-            <div class="container mx-auto" id="tentang">
-                <div class="flex flex-start mb-3">
-                    <h3 class="text-2xl capitalize font-semibold text-center mx-auto mb-4">
-                        Tentang Esteh Remaja
-                    </h3>
-                </div>
-                <div class="flex justify-center mx-auto mb-3 w-1/2 ">
-                  <p class="text-center max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Esteh Remaja adalah penyedia minuman segar dengan nuansa remaja yang bersemangat. </p>
-                </div>
-                <div class="grid grid-rows-2 grid-cols-9 gap-4">
-                    <div
-                        class="relative col-span-9 row-span-1 md:col-span-4 card"
-                        style="height: 180px"
-                    >
-                        <div class="card-shadow rounded-xl">
-                            <img
-                                src="frontend/images/content/es-teh-remaja1.jpg"
-                                alt=""
-                                class="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl"
-                            />
-                        </div>
-                        <div
-                            class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-48 md:pl-72"
-                        >
-                        </div>
-                    </div>
-                    <div
-                        class="relative col-span-9 row-span-1 md:col-span-2 md:row-span-2 card"
-                    >
-                        <div class="card-shadow rounded-xl">
-                            <img
-                                src="frontend/images/content/strawberry.jpg"
-                                alt=""
-                                class="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl"
-                            />
-                        </div>
-                        <div
-                            class="overlay right-0 left-0 top-0 bottom-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-12"
-                        >
-                        </div>
-                    </div>
-                    <div
-                        class="relative col-span-9 row-span-1 md:col-span-3 md:row-span-2 card"
-                    >
-                        <div class="card-shadow rounded-xl">
-                            <img
-                                src="frontend/images/content/mix.jpg"
-                                alt=""
-                                class="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl"
-                            />
-                        </div>
-                        <div
-                            class="overlay right-0 left-0 top-0 bottom-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-12"
-                        >
-                        </div>
-                    </div>
-                    <div
-                        class="relative col-span-9 row-span-1 md:col-span-4 card"
-                    >
-                        <div class="card-shadow rounded-xl">
-                            <img
-                                src="frontend/images/content/mix2.jpg"
-                                alt=""
-                                class="w-full h-full object-cover object-center overlay overflow-hidden rounded-xl"
-                            />
-                        </div>
-                        <div
-                            class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-48 md:pl-72"
-                        >
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+          {{-- Start About --}}
+        <section id="tentang" class="bg-slate-100 dark:bg-gray-900">
+          <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+              <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                  <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Tentang kami</h2>
+                  <p class="mb-4">Esteh Remaja adalah penyedia minuman segar dengan nuansa remaja yang bersemangat. Kami menyajikan beragam varian rasa yang memikat, mulai dari rasa cokelat yang menggoda, kelezatan green tea yang menenangkan, cita rasa leci yang menyegarkan, hingga keistimewaan mangga yang eksotis. Tak lupa, kami juga menghadirkan kesempurnaan red velvet yang elegan dan kesegaran manis strawberry yang menggugah.</p>
+                  <p>Kami percaya setiap tegukan dari minuman kami adalah pengalaman cita rasa yang membawa kegembiraan dan kenikmatan bagi para pelanggan kami.</p>
+              </div>
+              <div class="grid grid-cols-2 gap-4 mt-8">
+                  <img class="w-full rounded-lg" src="frontend/images/content/random.jpg" alt="office content 1">
+                  <img class="mt-4 w-full lg:mt-10 rounded-lg" src="frontend/images/content/random2.jpg" alt="office content 2">
+              </div>
+          </div>
+      </section>
         <!-- END: ABOUT -->
       
           <!-- START: JUST ARRIVED -->
           <section class="flex flex-col py-16" id="menu">
             <div class="container mx-auto mb-4" id="menu_index">
               <div class="flex justify-center text-center mb-4">
-                <h3 class="text-2xl capitalize font-semibold">
-                  Menu Teh
-                </h3>
+                <h3 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Menu Teh</h3>
               </div>
             </div>
             <div class="overflow-x-hidden px-4" id="carousel">
@@ -164,5 +102,29 @@
             </div>
           </section>
           <!-- END: JUST ARRIVED -->
-      
+
+          {{-- Form Contact --}}
+          <section id="kontak" class="bg-slate-100 dark:bg-gray-900">
+            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Kontak Kami</h2>
+                <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Jika anda ingin bekerja sama atau melakukan pesanan dalam jumlah banyak silahkan hubungi kami</p>
+                <form action="#" method="" class="space-y-8">
+                  @csrf
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">email</label>
+                        <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@gmail.com" required>
+                    </div>
+                    <div>
+                        <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                        <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Apa yang bisa kami bantu?" required>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Pesan</label>
+                        <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Tinggalkan pesan..."></textarea>
+                    </div>
+                    <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-green-600 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Kirim Pesan</button>
+                </form>
+            </div>
+          </section>
+          {{-- End Form Contact --}}
 @endsection

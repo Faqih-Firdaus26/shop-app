@@ -2,11 +2,11 @@
 @section('content')
 
     <!-- START: BREADCRUMB -->
-    <section class="bg-gray-100 py-8 px-4">
+    <section class="bg-green-100 py-8 px-4">
         <div class="container mx-auto">
           <ul class="breadcrumb">
             <li>
-              <a href="index.html">Home</a>
+              <a href="{{ route('index') }}">Home</a>
             </li>
             <li>
               <a href="#" aria-label="current-page">Details</a>
@@ -61,7 +61,7 @@
               @csrf
               <button 
               type="submit"
-              class="transition-all duration-200 bg-pink-400 text-black focus:bg-black focus:text-pink-400 rounded-full px-8 py-3 mt-4 inline-flex"
+              class="transition-all duration-200 bg-green-600 text-black focus:bg-black focus:text-white rounded-full px-8 py-3 mt-4 inline-flex"
               ><svg
                 class="fill-current mr-3"
                 width="26"
@@ -100,7 +100,7 @@
       <!-- END: DETAILS -->
   
 
-      <section class="bg-gray-100 px-4 py-16">
+      <section class="bg-yellow-200 px-4 py-16">
         <div class="container mx-auto">
           <div class="flex flex-start mb-4">
             <h3 class="text-2xl capitalize font-semibold">

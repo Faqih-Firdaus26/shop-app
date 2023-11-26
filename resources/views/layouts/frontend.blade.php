@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <meta name="theme-color" content="#000" />
+
+    {{-- script --}}
+    <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="f{{ url('frontend/favicon.ico') }}">
   <link href="{{ url('frontend/css/app.minify.css') }}" rel="stylesheet">
 </head>

@@ -91,7 +91,7 @@ class UserController extends Controller
         $data = $request->all();
 
         $user->update($data);
-
+        Alert::success('Data Berhasil Di Ubah', 'Simpan');
        return redirect()->route('dashboard.user.index');
     }
 
@@ -101,7 +101,7 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         $user->delete();
-        Alert::error('Pesanan Sukses Dihapus', 'Hapus');
+        Alert::success('Data Berhasil Di Hapus', 'Hapus');
         return redirect()->route('dashboard.user.index');
     }
 }

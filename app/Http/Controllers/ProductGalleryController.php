@@ -75,6 +75,7 @@ class ProductGalleryController extends Controller
                 ]);
             }
         }
+        Alert::success('Sukses', 'Gambar Berhasil Di Tambahkan');
         return redirect()->route('dashboard.product.gallery.index', $product->id);
     }
 
@@ -109,6 +110,7 @@ class ProductGalleryController extends Controller
     {
         $gallery->delete();
 
+        Alert::success('Sukses', 'Produk berhasil dihapus');
         return redirect()->route('dashboard.product.gallery.index', $gallery->products_id);
     }
 }

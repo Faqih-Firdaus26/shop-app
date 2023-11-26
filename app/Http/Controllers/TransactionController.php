@@ -109,7 +109,7 @@ class TransactionController extends Controller
         $data = $request->all();
 
         $transaction->update($data);
-
+        Alert::success('Sukses', 'Data Berhasil Dirubah');
        return redirect()->route('dashboard.transaction.index');
     }
 

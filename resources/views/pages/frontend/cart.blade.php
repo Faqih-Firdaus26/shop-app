@@ -31,22 +31,28 @@
                 <div class="flex flex-start items-center pb-2 -mx-4">
                   <div class="px-4 flex-none">
                     <div class="" style="width: 90px">
-                      <h6>Photo</h6>
+                      <h6>Gambar</h6>
                     </div>
                   </div>
                   <div class="px-4 w-5/12">
                     <div class="">
-                      <h6>Product</h6>
+                      <h6>Produk</h6>
                     </div>
                   </div>
                   <div class="px-4 w-5/12">
                     <div class="">
-                      <h6>Price</h6>
+                      <h6>Harga</h6>
                     </div>
                   </div>
+                  <div class="px-4 w-5/12">
+                    <div class="">
+                      <h6>Kuantitas</h6>
+                    </div>
+                  </div>
+
                   <div class="px-4 w-2/12">
                     <div class="text-center">
-                      <h6>Action</h6>
+                      <h6>Aksi</h6>
                     </div>
                   </div>
                 </div>
@@ -77,7 +83,7 @@
                   <h6
                     class="font-semibold text-base md:text-lg block md:hidden"
                   >
-                    IDR {{ number_format($item->product->price) }}
+                    Rp {{ number_format($item->product->price) }}
                   </h6>
                 </div>
               </div>
@@ -105,8 +111,8 @@
             <!-- END: ROW 1 -->
               @empty
               <p id="cart-empty" class="text-center py-8">
-                Ooops... Cart is empty
-                <a href="{{ route('index') }}" class="underline">Shop Now</a>
+                Ooops... Keranjang Anda Kosong
+                <a href="{{ route('index') }}" class="underline">Belanja Sekarang</a>
               </p>
               @endforelse
              

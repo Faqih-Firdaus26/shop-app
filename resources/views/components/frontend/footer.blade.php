@@ -6,30 +6,30 @@
           </div>
 
           <!-- START form contact -->
-            <div class="flex">
-              <div class="px-4 w-full md:w-1/2 mb-4 md:mb-0 border border-gray-300 rounded-xl p-4 h-54 overflow-y-auto">
-                  <form action="#" method="post" id="contact-form">
-                    <label class="block mb-2"> Name <input type="text" name="name" 
-                      class="bg-gray-100 rounded-xl py-3 px-5 w-full focus:outline-none" placeholder="Your name"/>
-                    </label>
+          <div class="flex">
+            <div class="px-4 w-full md:w-1/2 mb-4 md:mb-0 border border-gray-300 rounded-xl p-4 h-54 overflow-y-auto">
+                <form action="#" method="post" id="contact-form">
+                  <label class="block mb-2"> Name <input type="text" name="name" 
+                    class="bg-gray-100 rounded-xl py-3 px-5 w-full focus:outline-none" placeholder="Your name"/>
+                  </label>
 
-                    <label class="block mb-2"> Your Email <input type="email" name="email" 
-                      class="bg-gray-100 rounded-xl py-3 px-5 w-full focus:outline-none" placeholder="Your email address"/>
-                    </label>
+                  <label class="block mb-2"> Your Email <input type="email" name="email" 
+                    class="bg-gray-100 rounded-xl py-3 px-5 w-full focus:outline-none" placeholder="Your email address"/>
+                  </label>
 
-                    <label class="block mb-2"> Phone Number <input type="tel" name="phone" 
-                      class="bg-gray-100 rounded-xl py-3 px-5 w-full focus:outline-none"placeholder="Your phone number"/>
-                    </label>
+                  <label class="block mb-2"> Phone Number <input type="tel" name="phone" 
+                    class="bg-gray-100 rounded-xl py-3 px-5 w-full focus:outline-none"placeholder="Your phone number"/>
+                  </label>
 
-                    <label class="block mb-2"> Subject <input type="text" name="subject" 
-                      class="bg-gray-100 rounded-xl py-3 px-5 w-full focus:outline-none"placeholder="Subject"/>
-                    </label>
+                  <label class="block mb-2"> Subject <input type="text" name="subject" 
+                    class="bg-gray-100 rounded-xl py-3 px-5 w-full focus:outline-none"placeholder="Subject"/>
+                  </label>
 
-                    <label class="block mb-4"> Message <textarea name="message" 
-                      class="bg-gray-100 rounded-xl py-3 px-5 w-full h-32 focus:outline-none"placeholder="Your message"></textarea>
-                    </label>
+                  <label class="block mb-4"> Message <textarea name="message" 
+                    class="bg-gray-100 rounded-xl py-3 px-5 w-full h-32 focus:outline-none"placeholder="Your message"></textarea>
+                  </label>
 
-                    <button type="submit" class="bg-pink-400 text-white rounded-xl py-3 px-6"> Get Started </button>
+                  <button type="submit" class="bg-pink-400 text-white rounded-xl py-3 px-6"> Get Started </button>
                 </form>
             </div>
           <!-- END form contact -->
@@ -89,7 +89,7 @@
                 </ul>
               </div>
 
-              <div class="px-4 w-full md:w-3/12 mb-4 md:mb-0">
+              {{-- <div class="px-4 w-full md:w-3/12 mb-4 md:mb-0">
                 <h5 class="text-lg font-semibold mb-2 relative">Special Letter</h5>
                 <form action="#">
                   <label class="relative w-full">
@@ -102,7 +102,7 @@
                     </button>
                   </label>
                 </form>
-              </div>
+              </div> --}}
             </div>
           </aside>
         </div>

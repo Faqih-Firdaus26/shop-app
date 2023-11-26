@@ -6,4 +6,5 @@
     </x-slot>
 
     <h1 class="text-center mt-5 text-bold text-2xl"><strong>INI DASHBOARD</strong></h1>
+    
 </x-app-layout>

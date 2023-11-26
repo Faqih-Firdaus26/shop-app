@@ -32,6 +32,9 @@
 
     @include('components.frontend.footer')
 
+    @include('sweetalert::alert')
+
+
     
 
 

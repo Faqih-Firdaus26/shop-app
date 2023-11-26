@@ -63,8 +63,6 @@
                             class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-48 md:pl-72"
                         >
                         </div>
-                        <a href="details.html" class="stretched-link">
-                        </a>
                     </div>
                     <div
                         class="relative col-span-9 row-span-1 md:col-span-2 md:row-span-2 card"
@@ -80,8 +78,6 @@
                             class="overlay right-0 left-0 top-0 bottom-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-12"
                         >
                         </div>
-                        <a href="details.html" class="stretched-link">
-                        </a>
                     </div>
                     <div
                         class="relative col-span-9 row-span-1 md:col-span-3 md:row-span-2 card"
@@ -97,8 +93,6 @@
                             class="overlay right-0 left-0 top-0 bottom-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-12"
                         >
                         </div>
-                        <a href="details.html" class="stretched-link">
-                        </a>
                     </div>
                     <div
                         class="relative col-span-9 row-span-1 md:col-span-4 card"
@@ -114,8 +108,6 @@
                             class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-48 md:pl-72"
                         >
                         </div>
-                        <a href="details.html" class="stretched-link">
-                        </a>
                     </div>
                 </div>
             </div>

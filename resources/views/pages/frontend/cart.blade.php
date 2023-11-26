@@ -90,7 +90,7 @@
               </div>
               <div class="px-4 w-2/12">
                 <div class="text-center">
-                  <form action="{{ route('cart-delete', $item->id) }}" method="POST">
+                  <form action="{{ route('cart-delete', $item->id) }}" method="POST" data-confirm-delete="true">
                     @csrf
                     @method('DELETE')
                     <button

@@ -6,6 +6,8 @@ use App\Http\Requests\UserRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Yajra\DataTables\DataTables;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 class UserController extends Controller
 {
@@ -99,6 +101,7 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         $user->delete();
+        Alert::error('Pesanan Sukses Dihapus', 'Hapus');
         return redirect()->route('dashboard.user.index');
     }
 }

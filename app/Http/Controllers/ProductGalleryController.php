@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 use App\Models\ProductGallery;
 use Illuminate\Support\Facades\Storage;
 use Yajra\DataTables\Facades\DataTables;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 
 class ProductGalleryController extends Controller

@@ -7,6 +7,7 @@ use Illuminate\Support\Str;
 use App\Http\Requests\ProductRequest; // Pastikan menggunakan 'Requests' bukan 'Request'
 use App\Models\Product;
 use Yajra\DataTables\DataTables; // Menggunakan 'DataTables' bukan 'Contracts\DataTables'
+use RealRashid\SweetAlert\Facades\Alert;
 
 class ProductController extends Controller
 {

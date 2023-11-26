@@ -1,13 +1,14 @@
     <!-- START: HEADER -->
     <header class="{{ \Route::current()->getName() == 'index' ? 'absolute' : '' }} w-full z-50 px-4">
-        <div class="container mx-auto py-5">
+        <div class="container mx-auto ">
           <div class="flex flex-stretch items-center">
             <div class="w-56 items-center flex">
                 <a href="{{ route('index') }}">
                     <img
                     src="/frontend/images/content/logo-dashboard.png"
-                    alt="Luxspace | Fulfill your house with beautiful furniture"
-                    width="100px"
+                    alt=""
+                    width="200px"
+                    height="50px"
                   />
                 </a>
             </div>

@@ -7,6 +7,8 @@ use App\Models\Transaction;
 use App\Models\TransactionItem;
 use Illuminate\Http\Request;
 use Yajra\DataTables\DataTables; 
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 
 class TransactionController extends Controller

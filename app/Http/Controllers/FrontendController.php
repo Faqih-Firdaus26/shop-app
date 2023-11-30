@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\CheckoutRequest;
 use RealRashid\SweetAlert\Facades\Alert;
 use Midtrans\Config;
-use midtrans\Snap;
+use Midtrans\Snap;
 
 class FrontendController extends Controller
 {
@@ -20,6 +20,11 @@ class FrontendController extends Controller
         $products = Product::with(['galleries'])->latest()->get();
 
         return view('pages.frontend.index', compact('products'));
+    }
+
+    public function test_view(Request $request) {
+
+        return view('pages.frontend.contact_mail');
     }
 
     public function details(Request $request, $slug) {
@@ -67,7 +72,7 @@ class FrontendController extends Controller
         //membuat item transaksi
         foreach ($carts as $cart) {
             $items[] = TransactionItem::create([
-                'transaction_id' => $transaction->id,
+                'transactions_id' => $transaction->id,
                 'users_id' => $cart->users_id,
                 'products_id' => $cart->products_id
             ]);
@@ -77,7 +82,7 @@ class FrontendController extends Controller
         Cart::where('users_id', Auth::user()->id)->delete();
 
         // konfigurasi midtrans
-        Config::$serverKey = config('services.midtrans.serverkey');
+        Config::$serverKey = config('services.midtrans.serverKey');
         Config::$isProduction = config('services.midtrans.isProduction');
         Config::$isSanitized = config('services.midtrans.isSanitized');
         Config::$is3ds = config('services.midtrans.is3ds');

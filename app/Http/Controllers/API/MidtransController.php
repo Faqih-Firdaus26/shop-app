@@ -13,7 +13,7 @@ class MidtransController extends Controller
     public function callback()
     {
         // Set config midtrans
-        Config::$serverKey = config('services.midtrans.serverkey');
+        Config::$serverKey = config('services.midtrans.serverKey');
         Config::$isProduction = config('services.midtrans.isProduction');
         Config::$isSanitized = config('services.midtrans.isSanitized');
         Config::$is3ds = config('services.midtrans.is3ds');
@@ -34,30 +34,30 @@ class MidtransController extends Controller
         $transaction = Transaction::findOrFail($order[1]);
 
         // Handle notif status midtrans
-        switch ($status) {
-            case 'capture':
-                if ($type === 'credit_card') {
-                    if ($fraud === 'challenge') {
-                        $transaction->status = 'PENDING';
-                    } else {
-                        $transaction->status = 'SUCCESS';
-                    }
+        if($status == 'capture'){
+            if($type == 'credit_card'){
+                if($fraud == 'challenge'){
+                    $transaction->status = 'PENDING';
                 }
-                break;
-            case 'settlement':
-                $transaction->status = 'SUCCESS';
-                break;
-            case 'pending':
-            case 'deny':
-                $transaction->status = 'PENDING';
-                break;
-            case 'expire':
-            case 'cancel':
-                $transaction->status = 'CANCELLED';
-                break;
-            default:
-                // Default handling for other status if needed
-                break;
+                else{
+                    $transaction->status = 'SUCCESS';
+                }
+            }
+        }
+        else if ($status == 'settlement'){
+            $transaction->status = 'SUCCESS';
+        }
+        else if ($status == 'pending'){
+            $transaction->status = 'PENDING';
+        }
+        else if ($status == 'deny'){
+            $transaction->status = 'PENDING';
+        }
+        else if ($status == 'expire'){
+            $transaction->status = 'CANCELLED';
+        }
+        else if ($status == 'cancel'){
+            $transaction->status = 'CANCELLED';
         }
 
         // Simpan transaksi

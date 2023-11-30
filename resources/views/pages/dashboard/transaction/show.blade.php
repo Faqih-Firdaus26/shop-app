@@ -31,11 +31,11 @@
 
             <div class="bg-white overflow-hidden shadow sm:rounded-lg mb-10">
                 <div class="p-6 bg-white border-b border-gray-200">
-                    <table class="table-auto w-full">
+                    <table class="table-auto w-full ">
                         <tbody>
                             <tr>
                                 <th class="border px-6 py-4 text-right">Name</th>
-                                <td class="border px-6 py-4">{{ $transaction->name }}</td>
+                                <td class="border px-6 py-4 ">{{ $transaction->name }}</td>
                             </tr>
                             <tr>
                                 <th class="border px-6 py-4 text-right">Email</th>
@@ -49,10 +49,10 @@
                                 <th class="border px-6 py-4 text-right">Phone</th>
                                 <td class="border px-6 py-4">{{ $transaction->phone }}</td>
                             </tr>
-                            <tr>
+                            {{-- <tr>
                                 <th class="border px-6 py-4 text-right">Courier</th>
                                 <td class="border px-6 py-4">{{ $transaction->courier }}</td>
-                            </tr>
+                            </tr> --}}
                             <tr>
                                 <th class="border px-6 py-4 text-right">Payment</th>
                                 <td class="border px-6 py-4">{{ $transaction->payment }}</td>

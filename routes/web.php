@@ -1,15 +1,16 @@
 <?php
 
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\FrontendController;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\ProductGalleryController;
-use App\Http\Controllers\TransactionController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\MyTransactionController;
-use App\Models\Transaction;
 use App\Models\User;
+use App\Models\Transaction;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\TransactionController;
+use App\Http\Controllers\MyTransactionController;
+use App\Http\Controllers\ProductGalleryController;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
@@ -24,6 +25,10 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 */
 
 Route::get('/', [FrontendController::class, 'index'])->name('index');
+
+Route::get('/test-view', [FrontendController::class, 'test_view']);
+
+Route::post('/post-message', [ContactFormController::class, 'post_message']);
 
 Route::get('/details/{slug}', [FrontendController::class, 'details'])->name('details');
 

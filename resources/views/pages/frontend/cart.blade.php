@@ -6,10 +6,10 @@
         <div class="container mx-auto">
           <ul class="breadcrumb">
             <li>
-              <a href="{{ route('index') }}">Home</a>
+              <a href="{{ route('index') }}">Beranda</a>
             </li>
             <li>
-              <a href="#" aria-label="current-page">Shopping Cart</a>
+              <a href="#" aria-label="current-page">Keranjang Belanja</a>
             </li>
           </ul>
         </div>
@@ -24,7 +24,7 @@
               <div
                 class="flex flex-start mb-4 mt-8 pb-3 border-b border-gray-200 md:border-b-0"
               >
-                <h3 class="text-2xl">Shopping Cart</h3>
+                <h3 class="text-2xl">Keranjang Belanja</h3>
               </div>
   
               <div class="border-b border-gray-200 mb-4 hidden md:block">
@@ -134,6 +134,7 @@
                       id="complete-name"
                       class="border-gray-200 border rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none"
                       placeholder="Masukkan Nama Lengkap Anda"
+                      required
                     />
                   </div>
   
@@ -146,6 +147,7 @@
                       id="email"
                       class="border-gray-200 border rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none"
                       placeholder="Masukkan Alamat Email Anda"
+                      required
                     />
                   </div>
   
@@ -158,6 +160,7 @@
                       id="address"
                       class="border-gray-200 border rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none"
                       placeholder="Masukkan Alamat Lengkap Anda"
+                      required
                     />
                   </div>
   
@@ -172,44 +175,9 @@
                       id="phone-number"
                       class="border-gray-200 border rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none"
                       placeholder="Masukkan Nomor Telepon Anda"
+                      required
                     />
-                  </div>
-  
-                  <div class="flex flex-col mb-4">
-                    <label for="complete-name" class="text-sm mb-2"
-                      >Kurir</label
-                    >
-                    <div class="flex -mx-2 flex-wrap">
-                      <div class="px-2 w-6/12 h-24 mb-4">
-                        <button
-                          type="button"
-                          data-value="fedex"
-                          data-name="courier"
-                          class="border border-gray-200 focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full focus:outline-none"
-                        >
-                          <img
-                            src="/frontend/images/content/logo-fedex.svg"
-                            alt="Logo Fedex"
-                            class="object-contain max-h-full"
-                          />
-                        </button>
-                      </div>
-                      <div class="px-2 w-6/12 h-24 mb-4">
-                        <button
-                          type="button"
-                          data-value="dhl"
-                          data-name="courier"
-                          class="border border-gray-200 focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full focus:outline-none"
-                        >
-                          <img
-                            src="/frontend/images/content/logo-dhl.svg"
-                            alt="Logo dhl"
-                            class="object-contain max-h-full"
-                          />
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+                  </div> 
   
                   <div class="flex flex-col mb-4">
                     <label for="complete-name" class="text-sm mb-2"
@@ -235,7 +203,7 @@
                   <div class="text-center">
                     <button
                       type="submit"
-                      disabled
+                      {{-- disabled --}}
                       class="bg-green-400 text-black hover:bg-black hover:text-green-400 focus:outline-none w-full py-3 rounded-full text-lg focus:text-black transition-all duration-200 px-6"
                     >
                       Checkout 

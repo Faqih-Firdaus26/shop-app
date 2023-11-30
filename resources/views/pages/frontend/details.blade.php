@@ -6,10 +6,10 @@
         <div class="container mx-auto">
           <ul class="breadcrumb">
             <li>
-              <a href="{{ route('index') }}">Home</a>
+              <a href="{{ route('index') }}">Beranda</a>
             </li>
             <li>
-              <a href="#" aria-label="current-page">Details</a>
+              <a href="#" aria-label="current-page">Detail</a>
             </li>
           </ul>
         </div>
@@ -111,8 +111,8 @@
             @foreach ($recomendations as $recomendation) 
                 
             <div class="px-3 flex-none" style="width: 320px">
-              <div class="rounded-xl p-4 pb-8 relative bg-white">
-                <div class="rounded-xl overflow-hidden card-shadow w-full h-36">
+              <div class="rounded-xl p-4 pb-8 relative bg-slate-100">
+                <div class="rounded-xl overflow-hidden card-shadow w-full h-50 bg-white">
                   <img
                     src="{{ $recomendation->galleries()->exists() ? Storage::url($recomendation->galleries->first()->url) : 'data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' }}"
                     alt=""

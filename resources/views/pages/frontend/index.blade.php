@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
 @extends('layouts.frontend')
 
 @section('content')
@@ -95,11 +103,27 @@
                   </a>
                 </div>
                 @endforeach
-                <!-- END: JUST ARRIVED ROW 1 -->
-
               </div>
-              <!-- </div> -->
+
+              <div class="flex justify-between items-center mt-4">
+                <button id="prevBtn" class="text-white text-xl focus:outline-none">
+                  <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 19l-7-7 7-7"></path>
+                  </svg>
+                </button>
+                <button id="nextBtn" class="text-white text-xl focus:outline-none">
+                  <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </button>
+              </div>
             </div>
+          </div>
+          
           </section>
           <!-- END: JUST ARRIVED -->
 
@@ -130,4 +154,27 @@
             </div>
           </section>
           {{-- End Form Contact --}}
-@endsection
+
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              const swiper = new Swiper('#carousel', {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                navigation: {
+                  prevEl: '#prevBtn',
+                  nextEl: '#nextBtn',
+                },
+              });
+          
+              // Add event listeners for navigation buttons
+              document.getElementById('prevBtn').addEventListener('click', () => {
+                swiper.slidePrev();
+              });
+          
+              document.getElementById('nextBtn').addEventListener('click', () => {
+                swiper.slideNext();
+              });
+            });
+          </script> 
+@endsection 

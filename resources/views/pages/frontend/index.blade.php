@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-</head>
 @extends('layouts.frontend')
 
 @section('content')
@@ -70,56 +62,30 @@
               </div>
             </div>
             <div class="overflow-x-hidden px-4" id="carousel">
-              <div class="container mx-auto"></div>
-              <!-- <div class="overflow-hidden z-10"> -->
-              <div class="flex -mx-4 flex-row relative">
-                <!-- START: JUST ARRIVED ROW 1 -->
-                @foreach ($products as $product)
-                <div class="px-4 relative card group ">
-                  <div
-                    class="rounded-xl overflow-hidden card-shadow relative bg-lime-200"
-                    style="width: 287px; height: 386px"
-                  >
-                    <div
-                      class="absolute opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center w-full h-full  bg-opacity-35"
-                    >
-                      <div
-                        class="bg-white text-black rounded-full w-16 h-16 flex items-center justify-center"
-                      >
-                        <p>
-                          details
-                        </p>
+              <div class="container mx-auto">
+                <div class="flex flex-wrap -mx-4 justify-center">
+                  <!-- START: JUST ARRIVED ROW 1 -->
+                  @foreach ($products as $product)
+                    <div class="px-4 mb-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4">
+                      <div class="relative card group">
+                        <div class="rounded-xl overflow-hidden card-shadow relative bg-lime-200"
+                             style="width: 287px; height: 386px">
+                          <div class="absolute opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center w-full h-full bg-opacity-35">
+                            <div class="bg-white text-black rounded-full w-16 h-16 flex items-center justify-center">
+                              <p>details</p>
+                            </div>
+                          </div>
+                          <img src="{{ $product->galleries()->exists() ? Storage::url($product->galleries->first()->url) : 'data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' }}" alt=""
+                               class="w-full h-full object-cover object-center"/>
+                        </div>
+                        <h5 class="text-lg font-semibold mt-4">{{ $product->name }}</h5>
+                        <span class="">Rp. {{ number_format($product->price) }}</span>
+                        <a href="{{ route('details', $product->slug) }}" class="stretched-link"></a>
                       </div>
                     </div>
-                    <img
-                      src="{{ $product->galleries()->exists() ? Storage::url($product->galleries->first()->url) : 'data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' }}"
-                      alt=""
-                      class="w-full h-full object-cover object-center"
-                    />
-                  </div>
-                  <h5 class="text-lg font-semibold mt-4">{{ $product->name }}</h5>
-                  <span class="">Rp. {{ number_format($product->price) }}</span>
-                  <a href="{{ route('details', $product->slug) }}" class="stretched-link">
-                  </a>
+                  @endforeach
+                  <!-- END: JUST ARRIVED -->
                 </div>
-                @endforeach
-              </div>
-
-              <div class="flex justify-between items-center mt-4">
-                <button id="prevBtn" class="text-white text-xl focus:outline-none">
-                  <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M15 19l-7-7 7-7"></path>
-                  </svg>
-                </button>
-                <button id="nextBtn" class="text-white text-xl focus:outline-none">
-                  <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M9 5l7 7-7 7"></path>
-                  </svg>
-                </button>
               </div>
             </div>
           </div>
@@ -153,28 +119,5 @@
                 </form>
             </div>
           </section>
-          {{-- End Form Contact --}}
-
-          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-          <script>
-            document.addEventListener('DOMContentLoaded', function () {
-              const swiper = new Swiper('#carousel', {
-                slidesPerView: 1,
-                spaceBetween: 10,
-                navigation: {
-                  prevEl: '#prevBtn',
-                  nextEl: '#nextBtn',
-                },
-              });
-          
-              // Add event listeners for navigation buttons
-              document.getElementById('prevBtn').addEventListener('click', () => {
-                swiper.slidePrev();
-              });
-          
-              document.getElementById('nextBtn').addEventListener('click', () => {
-                swiper.slideNext();
-              });
-            });
-          </script> 
+          {{-- End Form Contact --}} 
 @endsection 

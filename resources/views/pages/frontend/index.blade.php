@@ -68,7 +68,7 @@
                   @foreach ($products as $product)
                     <div class="px-4 mb-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4">
                       <div class="relative card group">
-                        <div class="rounded-xl overflow-hidden card-shadow relative bg-lime-200"
+                        <div class="rounded-xl overflow-hidden card-shadow relative bg-green-100"
                              style="width: 287px; height: 386px">
                           <div class="absolute opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center w-full h-full bg-opacity-35">
                             <div class="bg-white text-black rounded-full w-16 h-16 flex items-center justify-center">

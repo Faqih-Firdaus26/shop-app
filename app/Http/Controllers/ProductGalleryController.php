@@ -65,7 +65,7 @@ class ProductGalleryController extends Controller
     {
         $files = $request->file('files');
         
-        if ($request->hasfile('files')){
+        if ($request->hasFile('files')){
             foreach ($files as $file){
                 $path = $file->store('public/gallery');
 

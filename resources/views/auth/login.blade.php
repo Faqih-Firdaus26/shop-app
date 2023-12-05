@@ -55,6 +55,7 @@
                 <p>Don't have an account? <a href="{{ route('register') }}"  {{ \Route::current()->getName() == 'index' }} style="color:blue">Register now!</a></p>
             </div>
             
+            
         </form>
     </x-authentication-card>
 </x-guest-layout>

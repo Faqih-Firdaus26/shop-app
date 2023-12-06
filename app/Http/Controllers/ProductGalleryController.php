@@ -64,10 +64,14 @@ class ProductGalleryController extends Controller
     public function store(ProductGalleryRequest $request, Product $product)
     {
         $files = $request->file('files');
-        
-        if ($request->hasFile('files')){
-            foreach ($files as $file){
-                $path = $file->store('public/gallery');
+
+        if ($request->hasFile('files')) {
+            foreach ($files as $file) {
+                // Generate a unique filename for each file
+                $filename = uniqid() . '_' . $file->getClientOriginalName();
+
+                // Store the file in the "gallery" directory without the "public/" prefix
+                $path = $file->storeAs('gallery', $filename, 'public');
 
                 ProductGallery::create([
                     'products_id' => $product->id,
@@ -75,6 +79,7 @@ class ProductGalleryController extends Controller
                 ]);
             }
         }
+
         Alert::success('Sukses', 'Gambar Berhasil Di Tambahkan');
         return redirect()->route('dashboard.product.gallery.index', $product->id);
     }

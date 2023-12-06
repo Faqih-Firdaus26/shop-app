@@ -45,8 +45,8 @@
                   <p>Kami percaya setiap tegukan dari minuman kami adalah pengalaman cita rasa yang membawa kegembiraan dan kenikmatan bagi para pelanggan kami.</p>
               </div>
               <div class="grid grid-cols-2 gap-4 mt-8">
-                  <img class="w-full rounded-lg" src="frontend/images/content/random.jpg" alt="office content 1">
-                  <img class="mt-4 w-full lg:mt-10 rounded-lg" src="frontend/images/content/random2.jpg" alt="office content 2">
+                  <img class="w-full rounded-lg" src="frontend/images/content/random.jpg" alt="content 1">
+                  <img class="mt-4 w-full lg:mt-10 rounded-lg" src="frontend/images/content/random2.jpg" alt="content 2">
               </div>
           </div>
       </section>
@@ -66,7 +66,7 @@
                   <?php $__currentLoopData = $products; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $product): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <div class="px-4 mb-4 w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4">
                       <div class="relative card group">
-                        <div class="rounded-xl overflow-hidden card-shadow relative bg-lime-200"
+                        <div class="rounded-xl overflow-hidden card-shadow relative bg-green-100"
                              style="width: 287px; height: 386px">
                           <div class="absolute opacity-0 group-hover:opacity-100 transition duration-200 flex items-center justify-center w-full h-full bg-opacity-35">
                             <div class="bg-white text-black rounded-full w-16 h-16 flex items-center justify-center">

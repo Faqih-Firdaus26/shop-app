@@ -47,8 +47,8 @@
                   <p>Kami percaya setiap tegukan dari minuman kami adalah pengalaman cita rasa yang membawa kegembiraan dan kenikmatan bagi para pelanggan kami.</p>
               </div>
               <div class="grid grid-cols-2 gap-4 mt-8">
-                  <img class="w-full rounded-lg" src="{{ $product->galleries()->exists() ? Storage::url($product->galleries->first()->url) : 'data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' }}" alt="office content 1">
-                  <img class="mt-4 w-full lg:mt-10 rounded-lg" src="{{ $product->galleries()->exists() ? Storage::url($product->galleries->first()->url) : 'data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' }}" alt="office content 2">
+                  <img class="w-full rounded-lg" src="frontend/images/content/random.jpg" alt="content 1">
+                  <img class="mt-4 w-full lg:mt-10 rounded-lg" src="frontend/images/content/random2.jpg" alt="content 2">
               </div>
           </div>
       </section>

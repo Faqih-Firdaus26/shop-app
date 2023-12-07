@@ -64,7 +64,6 @@
       ga("send", "pageview");
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="<?php echo e(url('/frontend/js/app.js')); ?>"></script></body>
 </html>
 <?php /**PATH C:\xampp\htdocs\shop-app-new\resources\views/layouts/frontend.blade.php ENDPATH**/ ?>
